@@ -18,14 +18,29 @@
 .border-purple {
     border-color: rgb(96, 15, 172) !important;
 }
-hr {
-  border: none;
-  border-top: 1px solid rgba(0, 0, 0, 0.1); /* hellgraue Linie */
-  margin: 4rem 0;
+
+footer {
+    background-color: rgb(96, 15, 172);
+    color: white;
+    padding: 3rem 0;
 }
-.section-divider {
-  border: none;
- border-top: 1px solid rgba(0, 0, 0, 0.1); /* hellgraue Linie */
-  width: 1200px;
-  margin: 0 auto;
+
+footer h5 {
+    color: white;
+    margin-bottom: 1rem;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li a {
+    color: white;
+    text-decoration: none;
+    line-height: 1.8;
+}
+
+footer ul li a:hover {
+    text-decoration: underline;
 }
