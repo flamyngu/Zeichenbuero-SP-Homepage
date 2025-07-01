@@ -24,13 +24,13 @@
 }
 
 footer {
-    background-color: rgb(96, 15, 172);
-    color: white;
+    background-color: rgb(154, 111, 194);
+    color: rgb(255, 255, 255);
     padding: 3rem 0;
 }
 
 footer h5 {
-    color: white;
+    color: rgb(255, 255, 255);
     margin-bottom: 1rem;
 }
 
