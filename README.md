@@ -53,17 +53,110 @@ Am dritten Tag wurde die Galerie überarbeitet und um echte Bilder ergänzt. Zie
 
 ---
 
-## Ausblick
-
-- Weiterentwicklung des Galerie-Designs (z. B. Lightbox-Funktion)
-- Verknüpfung mit Unterseiten (z. B. Projektbeschreibungen zu Bildern)
-- Deployment auf GitHub Pages oder Server
+## Tag 4
 
 ---
 
-## Verwendete Tools & Ressourcen
+## Tag 5
 
-- **HTML5**, **CSS3**
-- **Unsplash** für lizenzfreie Architektur-Bilder
-- **Visual Studio Code** als Editor
-- **Browser DevTools** für Debugging
+---
+
+## Tag 6
+
+---
+
+## Tag 7
+
+---
+
+## Tag 8
+
+---
+
+## Tag 9
+
+---
+
+## Tag 10
+
+---
+
+## Tag 11
+
+---
+
+## Tag 12
+
+---
+
+## Tag 13
+
+---
+
+## Tag 14
+
+---
+
+## Tag 15
+
+---
+
+## Tag 16
+
+---
+
+## Tag 17
+
+---
+
+## Tag 18
+
+---
+
+## Tag 19
+
+---
+
+## Tag 20
+
+---
+
+## Tag 21
+
+---
+
+## Tag 22
+
+---
+
+## Tag 23
+
+---
+
+## Tag 24
+
+---
+
+## Tag 25
+
+---
+
+## Tag 26
+
+---
+
+## Tag 27
+
+---
+
+## Tag 28
+
+---
+
+## Tag 29
+
+---
+
+## Tag 30
+
+---
