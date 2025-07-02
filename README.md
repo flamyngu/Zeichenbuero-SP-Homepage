@@ -38,8 +38,8 @@ Am zweiten Tag wurde mit der **technischen Darstellung** begonnen. Dazu zählen 
 
 ## Tag 3 – Galerie Update & Bildintegration
 
-Am dritten Tag wurde die Galerie überarbeitet und um echte Bilder ergänzt. Ziel war eine **visuell ansprechende und funktionale Darstellung** und die vermeidung von **Copyright Stirkes**, außerdem habe ich eine mobile Ansicht für home.html schalungsplaene.html und bewehrungsplaene.html und ein cooles Hamburgermenu eingerichtet. 
-Ich habe auch Ideen für bessere Designs und smoothe Animationen auf https://www.awwwards.com/ und auf eingien Zeichenbüro Websiten gesucht (zb. https://www.zeichenbuero-nemati.at/). 
+Am dritten Tag wurde die Galerie überarbeitet und um echte Bilder ergänzt. Ziel war eine **visuell ansprechende und funktionale Darstellung** und die vermeidung von **Copyright Strikes**, außerdem habe ich eine mobile Ansicht für home.html schalungsplaene.html und bewehrungsplaene.html und ein cooles Hamburgermenu eingerichtet. 
+Ich habe auch Ideen für bessere Designs und smoothe Animationen auf https://www.awwwards.com/ und auf einigien Zeichenbüro Websiten gesucht (zb. https://www.zeichenbuero-nemati.at/). 
 
 **Verbesserungen:**
 - Entfernung des Tints bei den Background Bildern, da diese nun im Vordergrund stehen
