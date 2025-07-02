@@ -13,7 +13,7 @@ Am ersten Tag wurde die grundlegende Struktur der Website erstellt. Im Fokus sta
 - Erste Layout-Planung mit `div`-Containern
 
 **Platz für Bild(e):**
-> ![Startseite Screenshot](/IMAGES/screenshots/home.html - 30.June.2025.png)
+> ![Startseite Screenshot](IMAGES/screenshots/home.html%20-%2030.June.2025.png)
 
 ---
 
@@ -33,8 +33,8 @@ Am zweiten Tag wurde mit der **technischen Darstellung** begonnen. Dazu zählen 
 - Mobile-freundliche Darstellung
 
 **Platz für Bild(er):**
-> ![Galerie v1](bilder/tag2-galerie-v1.jpg)  
-> ![Schalungspläne](bilder/tag2-schalung.jpg)
+> ![Galerie v1](IMAGES/screenshots/galerie.html%20-%201.July.2025.png)  
+> ![Schalungspläne](IMAGES/screenshots/schalungsplaebe.html%20-%201.July.2025.png)
 
 ---
 
@@ -49,7 +49,7 @@ Am dritten Tag wurde die Galerie überarbeitet und um echte Bilder ergänzt. Zie
 - Performance-Optimierung durch kleinere Bildformate (`q=80&w=800` etc.)
 
 **Platz für Bild(er):**
-> ![Galerie verbessert](bilder/tag3-galerie-v2.jpg)
+> ![Galerie verbessert](IMAGES/screenshots/galerie.html%20-%202.July.2025.png)
 
 ---
 
