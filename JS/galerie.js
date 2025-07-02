@@ -2,8 +2,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // --- GALERIE-LOGIK ---
 
-    const sliderWrapper = document.querySelector('.slider-wrapper');
-    const slides = document.querySelectorAll('.slide');
     const backgroundImages = document.querySelectorAll('.background-image');
     
     const prevBtn = document.getElementById('prev-btn');
@@ -11,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const counter = document.getElementById('counter');
     const progressIndicator = document.querySelector('.progress-indicator');
 
-    const totalSlides = slides.length;
+    const totalSlides = backgroundImages.length;
     let currentIndex = 0;
     
     let isScrolling = false; 
@@ -24,12 +22,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const progressBars = document.querySelectorAll('.progress-bar');
 
     function updateGallery(newIndex) {
-        slides[currentIndex].classList.remove('active');
         backgroundImages[currentIndex].classList.remove('active');
         currentIndex = newIndex;
-        slides[currentIndex].classList.add('active');
         backgroundImages[currentIndex].classList.add('active');
-        sliderWrapper.style.transform = `translateX(-${currentIndex * 100}%)`;
         counter.textContent = `${currentIndex + 1} / ${totalSlides}`;
         progressBars.forEach((bar, index) => {
             bar.classList.toggle('active', index === currentIndex);
@@ -65,7 +60,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }, 1000); 
     });
 
-    if(slides.length > 0) {
+    if(backgroundImages.length > 0) {
         updateGallery(0);
     }
 
