@@ -38,13 +38,17 @@ Am zweiten Tag wurde mit der **technischen Darstellung** begonnen. Dazu zählen 
 
 ## Tag 3 – Galerie Update & Bildintegration
 
-Am dritten Tag wurde die Galerie überarbeitet und um echte Bilder ergänzt. Ziel war eine **visuell ansprechende und funktionale Darstellung** und die vermeidung von **Copyright Stirkes**.
+Am dritten Tag wurde die Galerie überarbeitet und um echte Bilder ergänzt. Ziel war eine **visuell ansprechende und funktionale Darstellung** und die vermeidung von **Copyright Stirkes**, außerdem habe ich eine mobile Ansicht für home.html schalungsplaene.html und bewehrungsplaene.html und ein cooles Hamburgermenu eingerichtet.
 
 **Verbesserungen:**
 - Entfernung des Tints bei den Background Bildern, da diese nun im Vordergrund stehen
 
 **Platz für Bild(er):**
 > ![Galerie verbessert](IMAGES/screenshots/galerie.html%20-%202.July.2025.png)
+> ![Galerie verbessert](IMAGES/screenshots/home.html%20responsive%20-%202.July.2025.png)
+> ![Galerie verbessert](IMAGES/screenshots/schalungsplaene.html%20responsive%20-%202.July.2025.png)
+> ![Galerie verbessert](IMAGES/screenshots/bewehrungsplaene.html%20responsive%20-%202.July.2025.png)
+> ![Galerie verbessert](IMAGES/screenshots/hamburgerMenuMobile%20-%202.July.2025.png)
 
 ---
 
