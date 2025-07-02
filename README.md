@@ -6,7 +6,6 @@
 Am ersten Tag wurde die grundlegende Struktur der Website erstellt. Im Fokus stand die **Startseite** (`home.html`), die als Einstiegspunkt für Besucher dient. Sie enthält eine klare Navigation und einen ersten Eindruck zum Projekt.
 
 **Erstellte Elemente:**
-- HTML-Grundgerüst (`<!DOCTYPE html>`, `<html>`, `<head>`, `<body>`)
 - Navigationsleiste mit Links zu den Unterseiten
 - Willkommensnachricht / Projektbeschreibung
 - Platzhalter für ein großes **Hintergrundbild** im Header-Bereich
@@ -24,7 +23,6 @@ Am zweiten Tag wurde mit der **technischen Darstellung** begonnen. Dazu zählen 
 **Erstellte Inhalte:**
 - HTML-Seite mit Schalungsplänen
 - Einführung eines flexiblen Layouts für die Pläne
-- Galerie v1: Erste Bildstruktur in einer Grid-Ansicht
 - Nutzung von CSS `background-image` für Bildintegration
 
 **Technische Umsetzung:**
@@ -43,10 +41,9 @@ Am zweiten Tag wurde mit der **technischen Darstellung** begonnen. Dazu zählen 
 Am dritten Tag wurde die Galerie überarbeitet und um echte Bilder ergänzt. Ziel war eine **visuell ansprechende und funktionale Darstellung**.
 
 **Verbesserungen:**
-- Austausch der Platzhalterbilder durch reale Architektur-Fotos
+- Austausch der Platzhalterbilder durch reale Camera-Fotos
 - Anpassung der Bildgrößen & Cropping mittels `background-size: cover`
 - Leichtere Bedienung am Handy
-- Performance-Optimierung durch kleinere Bildformate (`q=80&w=800` etc.)
 
 **Platz für Bild(er):**
 > ![Galerie verbessert](IMAGES/screenshots/galerie.html%20-%202.July.2025.png)
