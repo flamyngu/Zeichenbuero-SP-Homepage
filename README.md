@@ -38,12 +38,10 @@ Am zweiten Tag wurde mit der **technischen Darstellung** begonnen. Dazu zählen 
 
 ## Tag 3 – Galerie Update & Bildintegration
 
-Am dritten Tag wurde die Galerie überarbeitet und um echte Bilder ergänzt. Ziel war eine **visuell ansprechende und funktionale Darstellung**.
+Am dritten Tag wurde die Galerie überarbeitet und um echte Bilder ergänzt. Ziel war eine **visuell ansprechende und funktionale Darstellung** und die vermeidung von **Copyright Stirkes**.
 
 **Verbesserungen:**
-- Austausch der Platzhalterbilder durch reale Camera-Fotos
-- Anpassung der Bildgrößen & Cropping mittels `background-size: cover`
-- Leichtere Bedienung am Handy
+- Entfernung des Tints bei den Background Bildern, da diese nun im Vordergrund stehen
 
 **Platz für Bild(er):**
 > ![Galerie verbessert](IMAGES/screenshots/galerie.html%20-%202.July.2025.png)

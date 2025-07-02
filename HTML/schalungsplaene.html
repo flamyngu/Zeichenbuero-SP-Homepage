@@ -16,21 +16,51 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="../CSS/style.css" />
+    <link rel="stylesheet" href="../CSS/mobile-nav.css" />
 
     <title>Zeichenbüro SP - Schalungspläne</title>
   </head>
   <body>
+    <!-- Mobile Header (visible only on small screens) -->
+    <header class="d-lg-none">
+        <div class="logo">
+            <a class="navbar-brand" href="home.html">
+                <img src="..." height="50" class="d-inline-block align-middle" alt="Logo" />
+            </a>
+        </div>
+        <button id="menu-toggle" aria-label="Menü öffnen">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+
+    <!-- Mobile Navigations-Overlay (visible only on small screens) -->
+    <div class="nav-overlay d-lg-none">
+        <nav>
+            <ul>
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="schalungsplaene.html">SCHALUNGSPLÄNE</a></li>
+                <li><a href="bewehrungsplaene.html">BEWEHRUNGSPLÄNE</a></li>
+                <li><a href="projekte.html">PROJEKTE</a></li>
+                <li><a href="galerie.html">GALERIE</a></li>
+                <li><a href="kunden.html">KUNDEN</a></li>
+                <li><a href="kontakt.html">KONTAKT</a></li>
+            </ul>
+        </nav>
+    </div>
+
     <!-- Container for logo and navbar -->
     <div class="container-fluid">
       <div class="row">
         <div class="col-12">
           <nav
-            class="navbar navbar-expand-lg navbar-light justify-content-center"
+            class="navbar navbar-expand-lg navbar-light justify-content-center d-none d-lg-flex"
           >
             <div class="container d-flex flex-column align-items-center">
               <a class="navbar-brand mb-2" href="home.html">
                 <img
-                  src="/IMAGES/logo.png"
+                  src="..."
                   height="50"
                   class="d-inline-block align-middle"
                   alt="Logo"
@@ -88,7 +118,7 @@
             <p>
               Unsere erfahrenen technischen Zeichner erstellen normgerechte Schalungspläne für Ihr Bauvorhaben. Wir berücksichtigen dabei alle relevanten Aspekte wie die gewählte Schalungssystem, die Betonierabschnitte und die erforderlichen Einbauteile.
             </p>
-            <div class="box-1">
+            <div class="box-1 mb-4 mb-md-0">
               <div class="butn butn-one">
                  <a href="kontakt.html"> <span>Jetzt anfragen →</span></a>
               </div>
@@ -230,6 +260,7 @@
       crossorigin="anonymous"
     ></script>
     <script src="../JS/home.js"></script>
+    <script src="../JS/mobile-nav.js"></script>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
   </body>
 </html>
