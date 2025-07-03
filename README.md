@@ -76,7 +76,7 @@ document.addEventListener('DOMContentLoaded', function () {
 **Verbesserungen:**
 - Projekt Seite hinzugefügt 👍
 
-**Platz für Bild(er)
+**Platz für Bild(er)**
 > ![Galerie verbessert](IMAGES/screenshots/projekte.html%20-%203.Juli.2025.png)
 ---
 
