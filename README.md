@@ -46,15 +46,38 @@ Ich habe auch Ideen für bessere Designs und smoothe Animationen auf https://www
 
 **Platz für Bild(er):**
 > ![Galerie verbessert](IMAGES/screenshots/galerie.html%20-%202.July.2025.png)
-> ![Galerie verbessert](IMAGES/screenshots/home.html%20responsive%20-%202.July.2025.png)
-> ![Galerie verbessert](IMAGES/screenshots/schalungsplaene.html%20responsive%20-%202.July.2025.png)
-> ![Galerie verbessert](IMAGES/screenshots/bewehrungsplaene.html%20responsive%20-%202.July.2025.png)
-> ![Galerie verbessert](IMAGES/screenshots/hamburgerMenuMobile%20-%202.July.2025.png)
+> ![responsive](IMAGES/screenshots/home.html%20responsive%20-%202.July.2025.png)
+> ![responsive](IMAGES/screenshots/schalungsplaene.html%20responsive%20-%202.July.2025.png)
+> ![responsive](IMAGES/screenshots/bewehrungsplaene.html%20responsive%20-%202.July.2025.png)
+> ![responsive](IMAGES/screenshots/hamburgerMenuMobile%20-%202.July.2025.png)
 
 ---
 
-## Tag 4
+## Tag 4 - Projekt Seite
+Am vierten Tag habe ich die projekte.html Seite hinzugefügt. Dort habe ich alle Projekte gelistet, außerdem habe ich eine coole funktion geschrieben welche die Farbe des Elemnts über welchem gerade gehoverd wird, je nach index verändert. 
+```
+document.addEventListener('DOMContentLoaded', function () {
+    const projectItems = document.querySelectorAll('.list-group-item');
+    const startColor = [96, 15, 172];
+    const endColor = [154, 111, 194];
 
+    projectItems.forEach((item, index) => {
+        const progress = index / (projectItems.length - 1);
+        const r = Math.round(startColor[0] + (endColor[0] - startColor[0]) * progress);
+        const g = Math.round(startColor[1] + (endColor[1] - startColor[1]) * progress);
+        const b = Math.round(startColor[2] + (endColor[2] - startColor[2]) * progress);
+        item.style.setProperty('--hover-bg-color', `rgb(${r}, ${g}, ${b})`);
+    });
+});
+
+```
+
+
+**Verbesserungen:**
+- Projekt Seite hinzugefügt 👍
+
+**Platz für Bild(er)
+> ![Galerie verbessert](IMAGES/screenshots/projekte.html%20-%203.Juli.2025.png)
 ---
 
 ## Tag 5
