@@ -182,3 +182,12 @@ footer ul li a:hover {
 .feature-box ul li:last-child {
     border-bottom: none;
 }
+
+.list-group-item {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.list-group-item:hover {
+    background-color: var(--hover-bg-color, rgb(96, 15, 172)); /* Fallback color */
+    color: white;
+}
