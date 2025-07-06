@@ -89,10 +89,12 @@ https://www.oesterreich.gv.at/de/themen/onlinesicherheit_internet_und_neue_medie
 
 ## Tag 6
 
+WOCHENENDE🎉🎉🎉
 ---
 
 ## Tag 7
 
+WOCHENENDE🎉🎉🎉
 ---
 
 ## Tag 8
