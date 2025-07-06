@@ -54,6 +54,7 @@ Ich habe auch Ideen für bessere Designs und smoothe Animationen auf https://www
 ---
 
 ## Tag 4 - Projekt Seite
+
 Am vierten Tag habe ich die projekte.html Seite hinzugefügt. Dort habe ich alle Projekte gelistet, außerdem habe ich eine coole funktion geschrieben welche die Farbe des Elemnts über welchem gerade gehoverd wird, je nach index verändert. 
 ```
 document.addEventListener('DOMContentLoaded', function () {
@@ -76,12 +77,14 @@ document.addEventListener('DOMContentLoaded', function () {
 **Verbesserungen:**
 - Projekt Seite hinzugefügt 👍
 
-**Platz für Bild(er)
+**Platz für Bild(er)**
 > ![Galerie verbessert](IMAGES/screenshots/projekte.html%20-%203.Juli.2025.png)
 ---
 
 ## Tag 5
 
+Am fünften Tage habe ich nichts an der Website verändert, weil ich Recherche bezüglich dem Themen Impressum, AGB und Datenschutz betrieben habe.
+https://www.oesterreich.gv.at/de/themen/onlinesicherheit_internet_und_neue_medien/internet_und_handy___sicher_durch_die_digitale_welt/Seite.1720902
 ---
 
 ## Tag 6
