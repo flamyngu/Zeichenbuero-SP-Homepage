@@ -100,6 +100,7 @@ WOCHENENDE🎉🎉🎉
 ## Tag 8
 
 ---
+Am achten Tag habe ich mich mit https://www.world4you.com/ auseinander gesetzt, da dies der Domain-Provider für stanev.at ist. Fokus lag auf FTP. 
 
 ## Tag 9
 
