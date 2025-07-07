@@ -82,9 +82,12 @@ document.addEventListener('DOMContentLoaded', function () {
 ---
 
 ## Tag 5
-
 Am fünften Tage habe ich nichts an der Website verändert, weil ich Recherche bezüglich dem Themen Impressum, AGB und Datenschutz betrieben habe.
 https://www.oesterreich.gv.at/de/themen/onlinesicherheit_internet_und_neue_medien/internet_und_handy___sicher_durch_die_digitale_welt/Seite.1720902
+
+**Verbesserungen:**
+- Neues Wissen akkumuliert
+
 ---
 
 ## Tag 6
@@ -96,12 +99,16 @@ WOCHENENDE🎉🎉🎉
 
 WOCHENENDE🎉🎉🎉
 ---
-
+---
 ## Tag 8
 
----
+
 Am achten Tag habe ich mich mit https://www.world4you.com/ auseinander gesetzt, da dies der Domain-Provider für stanev.at ist. Fokus lag auf FTP. 
 
+
+**Verbesserungen:**
+- Neues Wissen akkumuliert
+---
 ## Tag 9
 
 ---
