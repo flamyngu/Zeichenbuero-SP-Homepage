@@ -46,7 +46,8 @@ footer ul li a {
 }
 
 footer ul li a:hover {
-    text-decoration: underline;
+    text-decoration: none;
+    color: rgb(96, 15, 172);
 }
 
 .butn {
