@@ -140,6 +140,17 @@ Schön in der Website dargestellt.
 
 ## Tag 10
 
+Am 10ten Tage habe ich mich auf die Galerie (mobile ansicht) konzentriert und diese verbessert.
+
+
+**Verbesserungen:**
+- Die Galerie hat jetzt eine mobile ansicht
+
+
+**Platz für Bild(er):**
+> ![galerieMobil1](IMAGES/screenshots/galerie.html_Mobile1%20-%209.July.2025.png)
+> ![galerieMobil2](IMAGES/screenshots/galerie.html_Mobile2%20-%209.July.2025.png)
+> ![galerieMobil3](IMAGES/screenshots/galerie.html_Mobile3%20-%209.July.2025.png)
 ---
 
 ## Tag 11
