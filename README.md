@@ -111,6 +111,25 @@ Am achten Tag habe ich mich mit https://www.world4you.com/ auseinander gesetzt, 
 ---
 ## Tag 9
 
+Am neunten Tag habe ich die Fotos für bewehrungs/schalungsplaene zu gespielt bekommen, diese habe ich dann auch implementiert, jedoch hat sichs herausgestehlt, dass 27000x13000 pixel große Fotos die Ladezeit einwenig (🤏) kompromittiert haben. Deswegen musste ich sie verkleinern, jedoch waren die Files alle viel zu groß für jegliche online Bildverkleinerer. Aus diesem Grund habe ich mir ImageMagick https://github.com/dlemstra/Magick.NET/tree/main installiert und mich damit auseinander gesetzt. Die Fotos habe ich dann im Terminal mit dem Befehl:
+```
+magick "<Name_des_Bildes>" -resize 2000x "<Neuer_Name_des_verkleinerten_Bildes>"
+```
+verkleinert. Dananch habe ich die Bilder mit Lightbox2:
+```
+<!-- Lightbox2 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/lightbox2@2/dist/css/lightbox.min.css" rel="stylesheet" />
+<!-- Lightbox2 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/lightbox2@2/dist/js/lightbox-plus-jquery.min.js"></script>
+```
+Schön in der Website dargestellt. 
+**Verbesserungen:**
+- Ich habe gelernt, wie man mit ImageMagick und Lightbox2 arbeitet
+- Die Performance der Website ist nun deutlich höher weil keine riesigen Bilder geladen werden müssen
+- Es gibt jetzt eine schöne Ansicht falls man sich die Bilder genauer ansehen möchte
+
+**Platz für Bild(er)**
+
 ---
 
 ## Tag 10
