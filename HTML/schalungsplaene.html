@@ -17,6 +17,8 @@
     />
     <link rel="stylesheet" href="../CSS/style.css" />
     <link rel="stylesheet" href="../CSS/mobile-nav.css" />
+    <!-- Lightbox2 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/lightbox2@2/dist/css/lightbox.min.css" rel="stylesheet" />
 
     <title>Zeichenbüro SP - Schalungspläne</title>
   </head>
@@ -128,7 +130,7 @@
           <!-- Image Column -->
           <div class="col-md-6">
             <img
-              src="/IMAGES/placeholder-1200x675-copy - Kopie.png"
+              src="/IMAGES/WAL_AP_TWP_BT2_SL_KG_02_J.jpg-klein.webp"
               class="d-block w-100"
               alt="Schalungsplan"
             />
@@ -179,42 +181,46 @@
     </section>
 
     <section class="bg-light py-5">
-        <div class="container">
-            <h2 class="text-center font-weight-bold mb-5">
-                <span class="border-left border-purple pr-2"></span>
-                Beispiele unserer Arbeit
-            </h2>
-            <div class="row">
-                <div class="col-md-4 mb-4">
-                    <div class="card ">
-                        <img src="/IMAGES/placeholder-1200x675-copy - Kopie.png" class="card-img-top" alt="Projekt 1">
-                        <div class="card-body">
-                            <h5 class="card-title">Projekt 1</h5>
-                            <p class="card-text">Kurze Beschreibung des Projekts.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card">
-                        <img src="/IMAGES/placeholder-1200x675-copy - Kopie.png" class="card-img-top" alt="Projekt 2">
-                        <div class="card-body">
-                            <h5 class="card-title">Projekt 2</h5>
-                            <p class="card-text">Kurze Beschreibung des Projekts.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card">
-                        <img src="/IMAGES/placeholder-1200x675-copy - Kopie.png" class="card-img-top" alt="Projekt 3">
-                        <div class="card-body">
-                            <h5 class="card-title">Projekt 3</h5>
-                            <p class="card-text">Kurze Beschreibung des Projekts.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+  <div class="container viereck-bilder">
+    <h2 class="text-center font-weight-bold mb-5">
+      <span class="border-left border-purple pr-2"></span>
+      Beispiele unserer Arbeit
+    </h2>
+    <div class="row justify-content-center">
+      <div class="col-6 col-md-6 mb-4">
+        <a href="/IMAGES/002-klein.webp" data-lightbox="beispiele" data-title="Beispiel 1">
+          <div class="bild-vier">
+            <img src="/IMAGES/002-klein.webp" alt="Projekt 1">
+          </div>
+        </a>
+      </div>
+      <div class="col-6 col-md-6 mb-4">
+        <a href="/IMAGES/008-klein.webp" data-lightbox="beispiele" data-title="Beispiel 2">
+          <div class="bild-vier">
+            <img src="/IMAGES/008-klein.webp" alt="Projekt 2">
+          </div>
+        </a>
+      </div>
+      <div class="col-6 col-md-6 mb-4">
+        <a href="/IMAGES/WAL_AP_TWP_BT2_SL_FUN_01-klein.webp" data-lightbox="beispiele" data-title="Beispiel 3">
+          <div class="bild-vier">
+            <img src="/IMAGES/WAL_AP_TWP_BT2_SL_FUN_01-klein.webp" alt="Projekt 3">
+          </div>
+        </a>
+      </div>
+      <div class="col-6 col-md-6 mb-4">
+        <a href="/IMAGES/PLAN...SCHALUNG-FUNDIERUNG-klein.webp" data-lightbox="beispiele" data-title="Beispiel 4">
+          <div class="bild-vier">
+            <img src="/IMAGES/PLAN...SCHALUNG-FUNDIERUNG-klein.webp" alt="Projekt 4">
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
     
     <footer>
         <div class="container">
@@ -262,5 +268,8 @@
     <script src="../JS/home.js"></script>
     <script src="../JS/mobile-nav.js"></script>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <!-- Lightbox2 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/lightbox2@2/dist/js/lightbox-plus-jquery.min.js"></script>
+
   </body>
 </html>
