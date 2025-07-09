@@ -124,6 +124,7 @@ verkleinert. Dananch habe ich die Bilder mit Lightbox2:
 ```
 Schön in der Website dargestellt. 
 
+
 **Verbesserungen:**
 - Ich habe gelernt, wie man mit ImageMagick und Lightbox2 arbeitet
 - Die Performance der Website ist nun deutlich höher weil keine riesigen Bilder geladen werden müssen
