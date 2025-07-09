@@ -1,68 +1,69 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-    // --- GALERIE-LOGIK ---
+    // --- GALERIE-LOGIK (only for non-mobile views) ---
+    if (window.innerWidth > 768) { // Apply carousel logic only on larger screens
+        const backgroundImages = document.querySelectorAll('.background-image');
+        
+        const prevBtn = document.getElementById('prev-btn');
+        const nextBtn = document.getElementById('next-btn');
+        const counter = document.getElementById('counter');
+        const progressIndicator = document.querySelector('.progress-indicator');
 
-    const backgroundImages = document.querySelectorAll('.background-image');
-    
-    const prevBtn = document.getElementById('prev-btn');
-    const nextBtn = document.getElementById('next-btn');
-    const counter = document.getElementById('counter');
-    const progressIndicator = document.querySelector('.progress-indicator');
+        const totalSlides = backgroundImages.length;
+        let currentIndex = 0;
+        
+        let isScrolling = false; 
 
-    const totalSlides = backgroundImages.length;
-    let currentIndex = 0;
-    
-    let isScrolling = false; 
+        for (let i = 0; i < totalSlides; i++) {
+            const bar = document.createElement('div');
+            bar.classList.add('progress-bar');
+            progressIndicator.appendChild(bar);
+        }
+        const progressBars = document.querySelectorAll('.progress-bar');
 
-    for (let i = 0; i < totalSlides; i++) {
-        const bar = document.createElement('div');
-        bar.classList.add('progress-bar');
-        progressIndicator.appendChild(bar);
-    }
-    const progressBars = document.querySelectorAll('.progress-bar');
-
-    function updateGallery(newIndex) {
-        backgroundImages[currentIndex].classList.remove('active');
-        currentIndex = newIndex;
-        backgroundImages[currentIndex].classList.add('active');
-        counter.textContent = `${currentIndex + 1} / ${totalSlides}`;
-        progressBars.forEach((bar, index) => {
-            bar.classList.toggle('active', index === currentIndex);
-        });
-    }
-
-    function showNextSlide() {
-        const newIndex = (currentIndex + 1) % totalSlides;
-        updateGallery(newIndex);
-    }
-
-    function showPrevSlide() {
-        const newIndex = (currentIndex - 1 + totalSlides) % totalSlides;
-        updateGallery(newIndex);
-    }
-
-    nextBtn.addEventListener('click', showNextSlide);
-    prevBtn.addEventListener('click', showPrevSlide);
-    
-    window.addEventListener('wheel', (event) => {
-        if (document.body.classList.contains('menu-open')) return; // Wenn Menü offen, nicht scrollen
-        if (isScrolling) return;
-
-        if (event.deltaY > 0) {
-            showNextSlide();
-        } else if (event.deltaY < 0) {
-            showPrevSlide();
+        function updateGallery(newIndex) {
+            backgroundImages[currentIndex].classList.remove('active');
+            currentIndex = newIndex;
+            backgroundImages[currentIndex].classList.add('active');
+            counter.textContent = `${currentIndex + 1} / ${totalSlides}`;
+            progressBars.forEach((bar, index) => {
+                bar.classList.toggle('active', index === currentIndex);
+            });
         }
 
-        isScrolling = true;
-        setTimeout(() => {
-            isScrolling = false;
-        }, 1000); 
-    });
+        function showNextSlide() {
+            const newIndex = (currentIndex + 1) % totalSlides;
+            updateGallery(newIndex);
+        }
 
-    if(backgroundImages.length > 0) {
-        updateGallery(0);
-    }
+        function showPrevSlide() {
+            const newIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+            updateGallery(newIndex);
+        }
+
+        nextBtn.addEventListener('click', showNextSlide);
+        prevBtn.addEventListener('click', showPrevSlide);
+        
+        window.addEventListener('wheel', (event) => {
+            if (document.body.classList.contains('menu-open')) return; // Wenn Menü offen, nicht scrollen
+            if (isScrolling) return;
+
+            if (event.deltaY > 0) {
+                showNextSlide();
+            } else if (event.deltaY < 0) {
+                showPrevSlide();
+            }
+
+            isScrolling = true;
+            setTimeout(() => {
+                isScrolling = false;
+            }, 1000); 
+        });
+
+        if(backgroundImages.length > 0) {
+            updateGallery(0);
+        }
+    } // End of carousel logic block
 
 
     // --- NEU: HAMBURGER-MENÜ-LOGIK ---

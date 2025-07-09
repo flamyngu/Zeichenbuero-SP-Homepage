@@ -58,8 +58,12 @@ header {
     display: block;
     width: 30px;
     height: 2px;
-    background-color: white;
+    background-color: black; /* Default to black */
     transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+body.menu-open #menu-toggle span {
+    background-color: white; /* White when menu is open */
 }
 
 /* Animation des Hamburger-Icons zu einem "X" */
@@ -114,7 +118,7 @@ body.menu-open #menu-toggle span:nth-child(3) {
 .nav-overlay nav a {
     color: #f0f0f0;
     text-decoration: none;
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     font-weight: 500;
     letter-spacing: 1px;
     transition: color 0.3s ease;
@@ -286,4 +290,82 @@ body.menu-open #menu-toggle span:nth-child(3) {
 
 .progress-bar.active {
     background-color: white;
+}
+
+@media (max-width: 768px) {
+    body {
+        overflow: auto !important; /* Allow scrolling on mobile */
+    }
+
+    .logo {
+        visibility: hidden; /* Hide by default */
+        opacity: 0;
+        transition: opacity 0.3s ease, visibility 0.3s ease;
+    }
+
+    body.menu-open .logo {
+        visibility: visible; /* Show when menu is open */
+        opacity: 1;
+    }
+
+    /* Hide navigation buttons */
+    .gallery-nav {
+        display: none;
+    }
+
+    /* Adjust background images to stack */
+    .gallery-container {
+        height: auto; /* Allow content to define height */
+        display: block; /* Change from flex to block */
+    }
+
+    .background-images {
+        position: relative; /* Change from absolute */
+        height: auto; /* Allow content to define height */
+    }
+
+    .background-image {
+        position: relative; /* Change from absolute */
+        opacity: 1; /* Show all images */
+        /* height: 50vh; Removed, let aspect-ratio control height */
+        margin-bottom: 20px; /* Add some spacing between images */
+        aspect-ratio: 16 / 9; /* New: Force 16:9 aspect ratio */
+        object-fit: contain; /* New: Ensure entire image is visible */
+        width: 90%; /* New: Make images smaller */
+        margin: 0 auto 20px auto; /* New: Center images and add bottom margin */
+    }
+
+    /* Adjust foreground slider to stack */
+    .foreground-slider {
+        width: 90vw; /* Take more width on mobile */
+        max-width: none; /* Remove max-width constraint */
+        overflow: visible; /* Allow content to overflow */
+        margin: 0 auto; /* Center the slider */
+    }
+
+    .slider-wrapper {
+        display: block; /* Stack slides vertically */
+        transform: none !important; /* Disable JS transform */
+    }
+
+    .slide {
+        opacity: 1; /* Show all slides */
+        transform: none !important; /* Disable JS transform */
+        padding: 0; /* Remove padding */
+        margin-bottom: 20px; /* Add spacing between slides */
+    }
+
+    .slide img {
+        width: 90%; /* New: Make images smaller */
+        height: auto;
+        aspect-ratio: 16 / 9; /* New: Force 16:9 aspect ratio */
+        object-fit: contain; /* New: Ensure entire image is visible */
+        margin: 0 auto; /* New: Center images */
+    }
+
+    /* Remove the overlay gradients if they interfere */
+    .gallery-container::before,
+    .gallery-container::after {
+        display: none;
+    }
 }
