@@ -7,13 +7,13 @@ body {
     overflow: hidden; /* Verhindert standardmäßiges Scrollen */
 }
 
-/* NEU: Verhindert das Scrollen des Galerie-Inhalts, wenn das Menü offen ist */
+/* Verhindert das Scrollen des Galerie-Inhalts, wenn das Menü offen ist */
 body.menu-open {
     overflow: hidden;
 }
 
 
-/* --- NEU: Header & Hamburger Menu --- */
+/* --- Header & Hamburger Menu --- */
 header {
     position: fixed;
     top: 0;
@@ -24,7 +24,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 1000; /* Muss über allem liegen */
+    z-index: 1000;
 }
 
 .logo {
@@ -51,22 +51,21 @@ header {
     z-index: 1001;
     display: flex;
     flex-direction: column;
-    gap: 6px; /* Abstand zwischen den Strichen */
+    gap: 6px;
 }
 
 #menu-toggle span {
     display: block;
     width: 30px;
     height: 2px;
-    background-color: black; /* Default to black */
+    background-color: white; /* Farbe auf Weiß geändert für besseren Kontrast */
     transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
 }
 
 body.menu-open #menu-toggle span {
-    background-color: white; /* White when menu is open */
+    background-color: white;
 }
 
-/* Animation des Hamburger-Icons zu einem "X" */
 body.menu-open #menu-toggle span:nth-child(1) {
     transform: translateY(8px) rotate(45deg);
 }
@@ -80,7 +79,7 @@ body.menu-open #menu-toggle span:nth-child(3) {
 }
 
 
-/* --- NEU: Navigations-Overlay --- */
+/* --- Navigations-Overlay --- */
 .nav-overlay {
     position: fixed;
     top: 0;
@@ -93,7 +92,7 @@ body.menu-open #menu-toggle span:nth-child(3) {
     justify-content: center;
     align-items: center;
     opacity: 0;
-    visibility: hidden; /* Versteckt das Element für Screenreader und Klicks */
+    visibility: hidden;
     transform: translateY(-20px);
     transition: opacity 0.4s ease, visibility 0.4s ease, transform 0.4s ease;
 }
@@ -129,7 +128,7 @@ body.menu-open #menu-toggle span:nth-child(3) {
 }
 
 
-/* --- Bestehende Galerie-Stile --- */
+/* --- Desktop Galerie-Stile --- */
 .gallery-container {
     position: relative;
     width: 100vw;
@@ -162,16 +161,15 @@ body.menu-open #menu-toggle span:nth-child(3) {
     opacity: 1;
 }
 
-
 .gallery-container::before,
 .gallery-container::after {
     content: '';
     position: absolute;
     left: 0;
     right: 0;
-    height: 20vh; /* Höhe des Farbverlaufs */
-    z-index: 3; /* Muss über den Hintergrundbildern, aber unter dem Inhalt liegen */
-    pointer-events: none; /* Sorgt dafür, dass man durch den Farbverlauf klicken kann */
+    height: 20vh;
+    z-index: 3;
+    pointer-events: none;
 }
 
 .gallery-container::before {
@@ -182,62 +180,6 @@ body.menu-open #menu-toggle span:nth-child(3) {
 .gallery-container::after {
     bottom: 0;
     background: linear-gradient(to top, rgba(10, 10, 10, 0.7) 0%, rgba(10, 10, 10, 0) 100%);
-}
-
-
-.foreground-slider {
-    position: relative;
-    z-index: 10;
-    width: 40vw;
-    max-width: 500px;
-    overflow: hidden;
-}
-
-.slider-wrapper {
-    display: flex;
-    transition: transform 0.8s cubic-bezier(0.77, 0, 0.175, 1);
-}
-
-.slide {
-    flex: 0 0 100%;
-    box-sizing: border-box;
-    padding: 0 20px;
-    opacity: 0;
-    transform: scale(0.95);
-    transition: opacity 0.8s ease, transform 0.8s ease;
-}
-
-.slide.active {
-    opacity: 1;
-    transform: scale(1);
-}
-
-.slide img {
-    width: 100%;
-    height: auto;
-    aspect-ratio: 3 / 4;
-    object-fit: cover;
-    display: block;
-}
-
-.slide-content {
-    text-align: center;
-    padding: 20px 0;
-}
-
-.slide-content h2 {
-    margin: 10px 0 5px;
-    font-size: 1.5rem;
-    font-weight: 500;
-    letter-spacing: 1px;
-}
-
-.slide-content p {
-    margin: 0;
-    font-size: 0.9rem;
-    color: #a0a0a0;
-    text-transform: uppercase;
-    letter-spacing: 1px;
 }
 
 .gallery-nav {
@@ -292,80 +234,192 @@ body.menu-open #menu-toggle span:nth-child(3) {
     background-color: white;
 }
 
+/* Versteckt den mobilen Button auf dem Desktop */
+.orientation-button {
+    display: none;
+}
+
+
+/* =================================================== */
+/* === ALLES FÜR DIE MOBILE ANSICHT (unter 768px) === */
+/* =================================================== */
 @media (max-width: 768px) {
     body {
-        overflow: auto !important; /* Allow scrolling on mobile */
+        overflow-y: auto !important; /* Scrollen auf Mobile erlauben */
+        overflow-x: hidden;
     }
-
-    .logo {
-        visibility: hidden; /* Hide by default */
-        opacity: 0;
-        transition: opacity 0.3s ease, visibility 0.3s ease;
-    }
-
-    body.menu-open .logo {
-        visibility: visible; /* Show when menu is open */
-        opacity: 1;
-    }
-
-    /* Hide navigation buttons */
-    .gallery-nav {
-        display: none;
-    }
-
-    /* Adjust background images to stack */
+    
+    .gallery-nav { display: none; }
+    
     .gallery-container {
-        height: auto; /* Allow content to define height */
-        display: block; /* Change from flex to block */
+        height: auto;
+        display: block;
+        padding-top: 80px;
+        padding-bottom: 40px;
     }
 
     .background-images {
-        position: relative; /* Change from absolute */
-        height: auto; /* Allow content to define height */
+        position: relative;
+        height: auto;
     }
 
     .background-image {
-        position: relative; /* Change from absolute */
-        opacity: 1; /* Show all images */
-        /* height: 50vh; Removed, let aspect-ratio control height */
-        margin-bottom: 20px; /* Add some spacing between images */
-        aspect-ratio: 16 / 9; /* New: Force 16:9 aspect ratio */
-        object-fit: contain; /* New: Ensure entire image is visible */
-        width: 90%; /* New: Make images smaller */
-        margin: 0 auto 20px auto; /* New: Center images and add bottom margin */
+        position: relative;
+        opacity: 1;
+        width: 90%;
+        margin: 0 auto 20px auto;
+        aspect-ratio: 4 / 3;
+        background-size: cover;
+        border-radius: 8px;
+        overflow: hidden;
     }
 
-    /* Adjust foreground slider to stack */
-    .foreground-slider {
-        width: 90vw; /* Take more width on mobile */
-        max-width: none; /* Remove max-width constraint */
-        overflow: visible; /* Allow content to overflow */
-        margin: 0 auto; /* Center the slider */
-    }
-
-    .slider-wrapper {
-        display: block; /* Stack slides vertically */
-        transform: none !important; /* Disable JS transform */
-    }
-
-    .slide {
-        opacity: 1; /* Show all slides */
-        transform: none !important; /* Disable JS transform */
-        padding: 0; /* Remove padding */
-        margin-bottom: 20px; /* Add spacing between slides */
-    }
-
-    .slide img {
-        width: 90%; /* New: Make images smaller */
-        height: auto;
-        aspect-ratio: 16 / 9; /* New: Force 16:9 aspect ratio */
-        object-fit: contain; /* New: Ensure entire image is visible */
-        margin: 0 auto; /* New: Center images */
-    }
-
-    /* Remove the overlay gradients if they interfere */
     .gallery-container::before,
-    .gallery-container::after {
+    .gallery-container::after { 
+        display: none; 
+    }
+
+    .orientation-button {
+        display: flex;
+        position: absolute;
+        top: 15px;
+        left: 15px;
+        width: 44px;
+        height: 44px;
+        background-color: rgba(0,0,0,0.5);
+        border: 1px solid rgba(255,255,255,0.6);
+        border-radius: 50%;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        z-index: 50;
+        transition: background-color 0.3s ease;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='24px' viewBox='0 0 24 24' width='24px' fill='%23FFFFFF'%3E%3Cpath d='M0 0h24v24H0V0z' fill='none'/%3E%3Cpath d='M7 14H5v5h5v-2H7v-3zm-2-4h2V7h3V5H5v5zm12 7h-3v2h5v-5h-2v3zM14 5v2h3v3h2V5h-5z'/%3E%3C/svg%3E");
+        background-size: 24px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .orientation-button:hover {
+        background-color: rgba(0,0,0,0.8);
+    }
+    
+    .fullscreen-viewer {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(10, 10, 10, 1);
+        z-index: 2000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.4s ease, visibility 0s 0.4s;
+        overflow: hidden;
+    }
+    .fullscreen-viewer.active {
+        opacity: 1;
+        visibility: visible;
+        transition: opacity 0.4s ease;
+    }
+
+    .rotate-prompt {
+        color: white;
+        text-align: center;
+        font-size: 1.1rem;
         display: none;
+    }
+    .rotate-prompt.visible {
+        display: block;
+    }
+    .rotate-prompt .phone-icon {
+        width: 50px;
+        height: 100px;
+        border: 3px solid white;
+        border-radius: 10px;
+        margin: 0 auto 20px;
+        position: relative;
+        animation: rotate-animation 2.5s ease-in-out forwards;
+    }
+    @keyframes rotate-animation {
+        0%   { transform: rotate(0deg); opacity: 1; }
+        30%  { transform: rotate(0deg); opacity: 1; }
+        60%  { transform: rotate(90deg); opacity: 1; }
+        100% { transform: rotate(90deg); opacity: 0; }
+    }
+
+    .fullscreen-image {
+        position: absolute;
+        width: 100vh;
+        height: 100vw;
+        top: 50%;
+        left: 50%;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        opacity: 0;
+        transform: translate(-50%, -50%) rotate(0deg) scale(0.95);
+        transition: opacity 0.4s ease 0.1s, transform 0.5s ease 0.1s;
+    }
+
+    .fullscreen-image.visible {
+        opacity: 1;
+        transform: translate(-50%, -50%) rotate(90deg) scale(1);
+    }
+
+    .fullscreen-controls {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.5s ease 0.2s;
+    }
+
+    .fullscreen-controls.visible {
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    /* --- FINALE ÄNDERUNG HIER: Position des Schließen-Buttons --- */
+    .fullscreen-close {
+        position: absolute;
+        bottom: 15px;   /* Physisch: Unten */
+        right: 15px;    /* Physisch: Rechts */
+        font-size: 2.5rem;
+        color: white;
+        background: none;
+        border: none;
+        cursor: pointer;
+        line-height: 1;
+        padding: 10px;
+        z-index: 2001;
+    }
+    /* --- ENDE DER ÄNDERUNG --- */
+
+    .fullscreen-nav {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 2.5rem;
+        line-height: 1;
+        color: rgba(255, 255, 255, 0.7);
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: 15px 40px;
+        transition: color 0.3s ease;
+    }
+    .fullscreen-nav:hover { color: white; }
+
+    #fullscreen-prev {
+        top: 15px; /* Physisch: Oben */
+    }
+    #fullscreen-next {
+        bottom: 15px; /* Physisch: Unten */
     }
 }
