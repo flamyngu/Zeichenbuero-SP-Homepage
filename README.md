@@ -128,7 +128,11 @@ Schön in der Website dargestellt.
 - Die Performance der Website ist nun deutlich höher weil keine riesigen Bilder geladen werden müssen
 - Es gibt jetzt eine schöne Ansicht falls man sich die Bilder genauer ansehen möchte
 
-**Platz für Bild(er)**
+**Platz für Bild(er):**
+> ![schalungsplaene](IMAGES/screenshots/schalungsplaebe.html%20-%209.July.2025.png)
+> ![Lightbox2](IMAGES/screenshots/lightbox2_in_schalungsplaebe.html%20-%209.July.2025.png)
+
+
 
 ---
 
