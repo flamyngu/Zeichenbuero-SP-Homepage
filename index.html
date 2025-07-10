@@ -1,393 +1,343 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
 
-    <!-- Bootstrap CSS -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="CSS/style.css" />
-    <link rel="stylesheet" href="CSS/mobile-nav.css" />
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-    <title>Zeichenbüro SP</title>
-  </head>
-  <body>
-    <!-- Mobile Header (visible only on small screens) -->
-    <header class="d-lg-none">
-        <div class="logo">
-            <a class="navbar-brand" href="index.html">
-             <span class="text-purple h4">DI Petya Staneva</span>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+  <link rel="stylesheet" href="CSS/style.css" />
+  <link rel="stylesheet" href="CSS/mobile-nav.css" />
+
+  <title>Zeichenbüro DI Petya Staneva </title>
+</head>
+
+<body>
+  <!-- Mobile Header (visible only on small screens) -->
+  <header class="d-lg-none">
+    <div class="logo">
+      <a class="navbar-brand" href="index.html">
+        <span class="text-purple h4">DI Petya Staneva</span>
+      </a>
+    </div>
+    <button id="menu-toggle" aria-label="Menü öffnen">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </header>
+
+  <!-- Mobile Navigations-Overlay (visible only on small screens) -->
+  <div class="nav-overlay d-lg-none">
+    <nav>
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="HTML/schalungsplaene.html">SCHALUNGSPLÄNE</a></li>
+        <li><a href="HTML/bewehrungsplaene.html">BEWEHRUNGSPLÄNE</a></li>
+        <li><a href="HTML/projekte.html">PROJEKTE</a></li>
+        <li><a href="HTML/galerie.html">GALERIE</a></li>
+        <li><a href="HTML/kunden.html">KUNDEN</a></li>
+        <li><a href="HTML/kontakt.html">KONTAKT</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <!-- Container for logo and navbar -->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12">
+        <nav class="navbar navbar-expand-lg navbar-light justify-content-center d-none d-lg-flex">
+          <div class="container d-flex flex-column align-items-center">
+            <a class="navbar-brand mb-2" href="index.html">
+
+              <span class="text-purple h4">DI Petya Staneva</span>
             </a>
-        </div>
-        <button id="menu-toggle" aria-label="Menü öffnen">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
-    </header>
-
-    <!-- Mobile Navigations-Overlay (visible only on small screens) -->
-    <div class="nav-overlay d-lg-none">
-        <nav>
-            <ul>
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="HTML/schalungsplaene.html">SCHALUNGSPLÄNE</a></li>
-                <li><a href="HTML/bewehrungsplaene.html">BEWEHRUNGSPLÄNE</a></li>
-                <li><a href="HTML/projekte.html">PROJEKTE</a></li>
-                <li><a href="HTML/galerie.html">GALERIE</a></li>
-                <li><a href="HTML/kunden.html">KUNDEN</a></li>
-                <li><a href="HTML/kontakt.html">KONTAKT</a></li>
+            <ul class="navbar-nav d-flex flex-row justify-content-center">
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="index.html">HOME</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="HTML/schalungsplaene.html">SCHALUNGSPLÄNE</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="HTML/bewehrungsplaene.html">BEWEHRUNGSPLÄNE</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="HTML/projekte.html">PROJEKTE</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="HTML/galerie.html">GALERIE</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="HTML/kunden.html">KUNDEN</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="HTML/kontakt.html">KONTAKT</a>
+              </li>
+              <span class="magic-line"></span>
             </ul>
+          </div>
         </nav>
-    </div>
-
-    <!-- Container for logo and navbar -->
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-12">
-          <nav
-            class="navbar navbar-expand-lg navbar-light justify-content-center d-none d-lg-flex"
-          >
-            <div class="container d-flex flex-column align-items-center">
-              <a class="navbar-brand mb-2" href="index.html">
-              
-             <span class="text-purple h4">DI Petya Staneva</span> 
-              </a>
-              <ul class="navbar-nav d-flex flex-row justify-content-center">
-                <li class="nav-item mx-2">
-                  <a class="nav-link" href="index.html">HOME</a>
-                </li>
-                <li class="nav-item mx-2">
-                  <a class="nav-link" href="HTML/schalungsplaene.html"
-                    >SCHALUNGSPLÄNE</a
-                  >
-                </li>
-                <li class="nav-item mx-2">
-                  <a class="nav-link" href="HTML/bewehrungsplaene.html"
-                    >BEWEHRUNGSPLÄNE</a
-                  >
-                </li>
-                <li class="nav-item mx-2">
-                  <a class="nav-link" href="HTML/projekte.html">PROJEKTE</a>
-                </li>
-                <li class="nav-item mx-2">
-                  <a class="nav-link" href="HTML/galerie.html">GALERIE</a>
-                </li>
-                <li class="nav-item mx-2">
-                  <a class="nav-link" href="HTML/kunden.html">KUNDEN</a>
-                </li>
-                <li class="nav-item mx-2">
-                  <a class="nav-link" href="HTML/kontakt.html">KONTAKT</a>
-                </li>
-                <span class="magic-line"></span>
-              </ul>
-            </div>
-          </nav>
-        </div>
       </div>
     </div>
-     
-    <section class="bg-light py-5">
-      <div class="container">
-        <div class="row align-items-center">
-          <!-- Text Column -->
-          <div class="col-md-6">
-            <h6 class="text-uppercase text-muted">
-              Zeichenbüro<span class="text-purple h4"> SP</span>
-              <br>
-              DI Petya Staneva
-            </h6>
-            <h2 class="mb-4">
-              <span class="border-left border-purple pr-2"></span>
-              <strong>Über Uns</strong>
-            </h2>
-            <p>
-              Als Diplom-Ingenieur mit über 20 Jahren Erfahrung in der Baubranche habe ich mich auf die präzise und termingerechte
-              Erstellung von Schalungs- und Bewehrungsplänen spezialisiert. Seit 2019 betreibe ich mein eigenes Zeichenbüro und
-              unterstütze gemeinsam mit meinem Team Ziviltechniker, Tragwerksplaner und Baumeister bei der erfolgreichen Umsetzung
-              ihrer Bauprojekte.
-            
-              Unser Fokus liegt auf dem Hochbau – vom Wohnbau über Gewerbeimmobilien bis hin zu anspruchsvollen Sonderbauten.
-            
-              Was Sie von uns erwarten können:
-            </p>
-            <p>
-            <ul>
-              <li><strong>Professionelle Planerstellung</strong> nach aktuellen Normen und Standards</li>
-              <li><strong>Erfahrene Fachkräfte:</strong> Bauingenieure & technische Zeichner mit langjähriger Praxis</li>
-              <li><strong>Effiziente Abläufe</strong> und termintreue Lieferung</li>
-              <li><strong>Persönliche Betreuung</strong> und flexible Zusammenarbeit</li>
-              <li>Wir sorgen dafür, dass Ihre Bauvorhaben <strong>zuverlässig, wirtschaftlich und normgerecht</strong> realisiert
-                werden.</li>
-            </ul>
-            </p>
-            
-           
-           
+  </div>
 
-          </div>
+  <section class="bg-light py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- Text Column -->
+        <div class="col-md-6">
+          <h6 class="text-uppercase text-muted">
+            Zeichenbüro<span class="text-purple h4"> SP</span>
+            <br>
+            DI Petya Staneva
+          </h6>
+          <h2 class="mb-4">
+            <span class="border-left border-purple pr-2"></span>
+            <strong>Über Uns</strong>
+          </h2>
+          <p>
+            Als Diplom-Ingenieur mit über 20 Jahren Erfahrung in der Baubranche habe ich mich auf die präzise und
+            termingerechte
+            Erstellung von Schalungs- und Bewehrungsplänen spezialisiert. Seit 2019 betreibe ich mein eigenes
+            Zeichenbüro und
+            unterstütze gemeinsam mit meinem Team Ziviltechniker, Tragwerksplaner und Baumeister bei der erfolgreichen
+            Umsetzung
+            ihrer Bauprojekte.
 
-          <!-- Carousel Column -->
-          <div class="col-md-6">
-            <div id="ueberUns" class="carousel slide" data-ride="carousel">
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img
-                    src="/IMAGES/placeholder-1200x675-copy - Kopie.png"
-                    class="d-block w-100"
-                    alt="Plan 1"
-                  />
-            
-                </div>
-                <div class="carousel-item">
-                  <img
-                    src="/IMAGES/placeholder-1200x675-copy - Kopie.png"
-                    class="d-block w-100"
-                    alt="Plan 2"
-                  />
-                  
-                  </div>
-                </div>
+            Unser Fokus liegt auf dem Hochbau – vom Wohnbau über Gewerbeimmobilien bis hin zu anspruchsvollen
+            Sonderbauten.
+
+            Was Sie von uns erwarten können:
+          </p>
+          <p>
+          <ul>
+            <li><strong>Professionelle Planerstellung</strong> nach aktuellen Normen und Standards</li>
+            <li><strong>Erfahrene Fachkräfte:</strong> Bauingenieure & technische Zeichner mit langjähriger Praxis</li>
+            <li><strong>Effiziente Abläufe</strong> und termintreue Lieferung</li>
+            <li><strong>Persönliche Betreuung</strong> und flexible Zusammenarbeit</li>
+            <li>Wir sorgen dafür, dass Ihre Bauvorhaben <strong>zuverlässig, wirtschaftlich und normgerecht</strong>
+              realisiert
+              werden.</li>
+          </ul>
+          </p>
+
+
+
+
+        </div>
+
+        <!-- Carousel Column -->
+        <div class="col-md-6">
+          <div id="ueberUns" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="/IMAGES/placeholder-1200x675-copy - Kopie.png" class="d-block w-100" alt="Plan 1" />
+
               </div>
-              <a
-                class="carousel-control-prev"
-                href="#ueberUns"
-                role="button"
-                data-slide="prev"
-              >
-                <span
-                  class="carousel-control-prev-icon"
-                  aria-hidden="true"
-                ></span>
-              </a>
-              <a
-                class="carousel-control-next"
-                href="#ueberUns"
-                role="button"
-                data-slide="next"
-              >
-                <span
-                  class="carousel-control-next-icon"
-                  aria-hidden="true"
-                ></span>
-              </a>
+              <div class="carousel-item">
+                <img src="/IMAGES/placeholder-1200x675-copy - Kopie.png" class="d-block w-100" alt="Plan 2" />
+
+              </div>
             </div>
+          </div>
+          <a class="carousel-control-prev" href="#ueberUns" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          </a>
+          <a class="carousel-control-next" href="#ueberUns" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          </a>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+  <div class="bg-light py-3">
+    <hr class="section-divider">
+  </div>
+
+
+
+  <section class="bg-light py-5">
+    <div class="container">
+      <div class="row align-items-center">
+
+        <!-- Text Column (jetzt rechts) -->
+        <div class="col-md-4 order-md-2">
+          <h2 class="mb-4">
+            <span class="border-left border-purple pr-2"></span>
+            <strong>Schalungs- und</strong>
+            <br>
+
+            <span class="border-left border-purple pr-2"></span>
+            <strong>Bewehrungspläne</strong>
+          </h2>
+        </div>
+
+        <!-- Carousel Column (jetzt links) -->
+        <div class="col-md-8 order-md-1">
+          <div id="planCarousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+
+              <div class="carousel-item active">
+                <a href="/HTML/bewehrungsplaene.html">
+                  <img src="/IMAGES/ALT_BTA-B_KG_BW_UL_B016_02-kleinV2.jpg" class="d-block w-100" alt="Plan 1" />
+                  <div class="carousel-caption">
+                    <h5>Bewehrungspläne</h5>
+                  </div>
+                </a>
+              </div>
+
+              <div class="carousel-item">
+                <a href="/HTML/schalungsplaene.html">
+                  <img src="/IMAGES/WAL_AP_TWP_BT2_SL_FUN_01-klein.jpg" class="d-block w-100" alt="Plan 2" />
+                  <div class="carousel-caption">
+                    <h5>Schalungspläne</h5>
+                  </div>
+                </a>
+              </div>
+
+            </div>
+
+            <a class="carousel-control-prev" href="#planCarousel" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </a>
+            <a class="carousel-control-next" href="#planCarousel" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <div class="bg-light py-3">
+    <hr class="section-divider">
+  </div>
+  <section class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center font-weight-bold mb-5">
+        <span class="border-left border-purple pr-2"></span>
+        Vorteile einer Zusammenarbeit mit Zeichenbüro<span class="text-purple h1"> SP</span> sind
+
+      </h2>
+      <div class="row text-center">
+        <div class="col-md-4 mb-4">
+          <div class="advantage-card">
+            <i class="fas fa-users-cog fa-3x text-purple mb-3"></i>
+            <h5 class="font-weight-bold">Zugang zu Expertenwissen</h5>
+            <p class="text-muted small">
+              Profitieren Sie von einem eingespielten Team aus erfahrenen Statikern und technischen Zeichnern – ganz
+              ohne eigenes Personal aufbauen zu müssen.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="advantage-card">
+            <i class="fas fa-file-invoice-dollar fa-3x text-purple mb-3"></i>
+            <h5 class="font-weight-bold">Kalkulierbare Fixkosten</h5>
+            <p class="text-muted small">
+              Bereits zu Projektbeginn kennen Sie alle Kosten – für maximale Planungssicherheit.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="advantage-card">
+            <i class="fas fa-drafting-compass fa-3x text-purple mb-3"></i>
+            <h5 class="font-weight-bold">Weniger interner Aufwand</h5>
+            <p class="text-muted small">
+              Unser effizienter Planerstellungsprozess senkt in vielen Fällen Ihre internen Personalkosten.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="advantage-card">
+            <i class="fas fa-user-clock fa-3x text-purple mb-3"></i>
+            <h5 class="font-weight-bold">Flexible Ressourcennutzung</h5>
+            <p class="text-muted small">
+              Setzen Sie unser Team bedarfsgerecht ein – genau dann, wenn Sie Unterstützung benötigen.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="advantage-card">
+            <i class="fas fa-piggy-bank fa-3x text-purple mb-3"></i>
+            <h5 class="font-weight-bold">Wegfall interner Zusatzkosten</h5>
+            <p class="text-muted small">
+              Keine Kosten für Urlaube, Krankheitstage oder Sonderzahlungen – Sie zahlen nur für tatsächliche
+              Leistungen.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="advantage-card">
+            <i class="fas fa-clock fa-3x text-purple mb-3"></i>
+            <h5 class="font-weight-bold">Unterstützung bei Kapazitätsengpässen</h5>
+            <p class="text-muted small">
+              Bei hoher Auslastung sind wir Ihre verlässliche Backup-Lösung – schnell und unkompliziert.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-12 mt-3">
+          <div class="advantage-card">
+            <i class="fas fa-chart-line fa-3x text-purple mb-3"></i>
+            <h5 class="font-weight-bold">Skalierbarkeit ohne Zusatzkosten</h5>
+            <p class="text-muted small">
+              Sie wachsen, ohne in Infrastruktur, Software oder Schulungen investieren zu müssen – wir übernehmen das
+              für Sie.
+            </p>
           </div>
         </div>
       </div>
-    </section>
-    <div class="bg-light py-3">
-      <hr class="section-divider">
     </div>
+  </section>
 
 
 
-    <section class="bg-light py-5">
-  <div class="container">
-    <div class="row align-items-center">
-      
-      <!-- Text Column (jetzt rechts) -->
-      <div class="col-md-4 order-md-2">
-        <h2 class="mb-4">
-              <span class="border-left border-purple pr-2"></span>
-              <strong>Tragwerksplanung</strong>
-            </h2>
-      </div>
 
-      <!-- Carousel Column (jetzt links) -->
-      <div class="col-md-8 order-md-1">
-  <div id="planCarousel" class="carousel slide" data-ride="carousel">
-    <div class="carousel-inner">
-    
-      <div class="carousel-item active">
-      <a href="/HTML/bewehrungsplaene.html">
-        <img
-          src="/IMAGES/ALT_BTA-B_KG_BW_UL_B016_02-kleinV2.jpg"
-          class="d-block w-100"
-          alt="Plan 1"
-        />
-        <div class="carousel-caption">
-          <h5>Bewehrungspläne</h5>
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h5>Zeichenbüro SP</h5>
+          <p>Ihr Partner für technische Zeichnungen im Bauwesen.</p>
         </div>
-        </a>
-      </div>
-
-      <div class="carousel-item">
-      <a href="/HTML/schalungsplaene.html">
-        <img
-          src="/IMAGES/WAL_AP_TWP_BT2_SL_FUN_01-klein.jpg"
-          class="d-block w-100"
-          alt="Plan 2"
-        />
-        <div class="carousel-caption">
-          <h5>Schalungspläne</h5>
+        <div class="col-md-4">
+          <h5>Rechtliches</h5>
+          <ul>
+            <li><a href="/HTML/impressum.html">Impressum</a></li>
+            <li><a href="datenschutz.html">Datenschutz</a></li>
+            <li><a href="agb.html">AGB</a></li>
+          </ul>
         </div>
-        </a>
+        <div class="col-md-4">
+          <h5>Kontakt</h5>
+          <a href="mailto:info@placeholder.at" style="text-decoration: none; color: inherit;">Email:
+            info@placeholder.at</a>
+          <p>Telefon: +43 123 456 789</p>
+        </div>
       </div>
-
+      <div class="row">
+        <div class="col-12 text-center">
+          <p>&copy; 2025 Zeichenbüro SP und Martin Stanev. Alle Rechte vorbehalten.</p>
+        </div>
+      </div>
     </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <script src="../JS/home.js"></script>
+  <script src="../JS/mobile-nav.js"></script>
+</body>
 
-    <a class="carousel-control-prev" href="#planCarousel" role="button" data-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    </a>
-    <a class="carousel-control-next" href="#planCarousel" role="button" data-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    </a>
-  </div>
-</div>
-
-    </div>
-  </div>
-</section>
-<div class="bg-light py-3">
-      <hr class="section-divider">
-    </div>
-<section class="py-5 bg-light">
-  <div class="container">
-    <h2 class="text-center font-weight-bold mb-5">
-      <span class= "border-left border-purple pr-2"></span>
-      Vorteile einer Zusammenarbeit mit Zeichenbüro<span class="text-purple h1"> SP</span> sind
-    
-    </h2>
-    <div class="row text-center">
-
-      <!-- Vorteil 1 -->
-      <div class="col-md-4 mb-4">
-        <div class="advantage-card">
-          <i class="fas fa-users-cog fa-3x text-purple mb-3"></i>
-          <h5 class="font-weight-bold">Zugriff auf ein erfahrenes Team</h5>
-          <p class="text-muted small">
-            Sie müssen kein Team von Grund auf aufbauen. Sie nutzen ein bereits etabliertes Team aus erfahrenen Statikern und Zeichnern.
-          </p>
-        </div>
-      </div>
-
-      <!-- Vorteil 2 -->
-      <div class="col-md-4 mb-4">
-        <div class="advantage-card">
-          <i class="fas fa-file-invoice-dollar fa-3x text-purple mb-3"></i>
-          <h5 class="font-weight-bold">Planbare Kosten</h5>
-          <p class="text-muted small">
-            Bereits zu Beginn des Projekts sind Ihnen alle Fixkosten für die Erstellung der Pläne bekannt.
-          </p>
-        </div>
-      </div>
-
-      <!-- Vorteil 3 -->
-      <div class="col-md-4 mb-4">
-        <div class="advantage-card">
-          <i class="fas fa-drafting-compass fa-3x text-purple mb-3"></i>
-          <h5 class="font-weight-bold">Reduzierung des Aufwands</h5>
-          <p class="text-muted small">
-            In den meisten Fällen ist der Aufwand für die Erstellung der Pläne bei uns geringer als Ihre internen Personalkosten.
-          </p>
-        </div>
-      </div>
-
-      <!-- Vorteil 4 -->
-      <div class="col-md-4 mb-4">
-        <div class="advantage-card">
-          <i class="fas fa-user-clock fa-3x text-purple mb-3"></i>
-          <h5 class="font-weight-bold">Dämpfung der Kosten für Fachpersonal</h5>
-          <p class="text-muted small">
-            Sie nutzen die Unterstützung unseres Teams nur, wenn Sie sie wirklich brauchen.
-          </p>
-        </div>
-      </div>
-
-      <!-- Vorteil 5 -->
-      <div class="col-md-4 mb-4">
-        <div class="advantage-card">
-          <i class="fas fa-piggy-bank fa-3x text-purple mb-3"></i>
-          <h5 class="font-weight-bold">Ersparnis von zusätzlichen Kosten</h5>
-          <p class="text-muted small">
-            Für Urlaub, Feiertage, Krankheitstage und Zusatzprämien.
-          </p>
-        </div>
-      </div>
-
-      <!-- Vorteil 6 -->
-      <div class="col-md-4 mb-4">
-        <div class="advantage-card">
-          <i class="fas fa-clock fa-3x text-purple mb-3"></i>
-          <h5 class="font-weight-bold">Abdeckung von ausgelasteter Arbeitszeit</h5>
-          <p class="text-muted small">
-            Bei hoher Auslastung können Sie auf unsere Unterstützung zählen.
-          </p>
-        </div>
-      </div>
-
-      <!-- Vorteil 7 -->
-      <div class="col-md-12 mt-3">
-        <div class="advantage-card">
-          <i class="fas fa-chart-line fa-3x text-purple mb-3"></i>
-          <h5 class="font-weight-bold">Schnelle & kostenlose Weiterentwicklung Ihres Unternehmens</h5>
-          <p class="text-muted small">
-            Sie sparen Kosten für Infrastruktur, Software, Personalwesen und Schulungen.
-          </p>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-
-
-    
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <h5>Zeichenbüro SP</h5>
-                    <p>Ihr Partner für technische Zeichnungen im Bauwesen.</p>
-                </div>
-                <div class="col-md-4">
-                    <h5>Rechtliches</h5>
-                    <ul>
-                        <li><a href="/HTML/impressum.html">Impressum</a></li>
-                        <li><a href="datenschutz.html">Datenschutz</a></li>
-                        <li><a href="agb.html">AGB</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-4">
-                    <h5>Kontakt</h5>
-                    <a href="mailto:info@placeholder.at" style="text-decoration: none; color: inherit;">Email: info@placeholder.at</a>
-                    <p>Telefon: +43 123 456 789</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12 text-center">
-                    <p>&copy; 2025 Zeichenbüro SP und Martin Stanev. Alle Rechte vorbehalten.</p>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <script
-      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-      crossorigin="anonymous"
-    ></script>
-    <script src="../JS/home.js"></script>
-    <script src="../JS/mobile-nav.js"></script>
-  </body>
 </html>
