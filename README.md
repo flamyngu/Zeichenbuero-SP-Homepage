@@ -155,6 +155,15 @@ Am 10ten Tage habe ich mich auf die Galerie (mobile ansicht) konzentriert und di
 
 ## Tag 11
 
+Am 11ten Tag habe ich mich auf die Kontakte Seite konzentriert, dort habe ich die Kontaktdaten angepasst und eine Google Maps Map embedded
+
+**Verbesserung:**
+- Google Maps embedding
+- Korrekte Kontaktdaten
+
+
+**Platz für Bild(er):**
+> ![kontakt.html](IMAGES/screenshots/kontakt.html%20-%2010.Juli.2025.png)
 ---
 
 ## Tag 12
