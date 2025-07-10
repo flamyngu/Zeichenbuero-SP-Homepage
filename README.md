@@ -155,7 +155,7 @@ Am 10ten Tage habe ich mich auf die Galerie (mobile ansicht) konzentriert und di
 
 ## Tag 11
 
-Am 11ten Tag habe ich mich auf die Kontakte Seite konzentriert, dort habe ich die Kontaktdaten angepasst und eine Google Maps Map embedded
+Am 11ten Tag habe ich mich auf die Kontakte Seite konzentriert, dort habe ich die Kontaktdaten angepasst und eine Google Maps Map embedded. Dem entsprechend habe ich mich auch einwenig mit der Googlemaps API auseinander gesetzt https://developers.google.com/maps/documentation/embed/get-started?hl=de
 
 **Verbesserung:**
 - Google Maps embedding
