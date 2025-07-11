@@ -168,7 +168,7 @@ Am 11ten Tag habe ich mich auf die Kontakte Seite konzentriert, dort habe ich di
 
 ## Tag 12
 
-Am 12ten Tage habe ich mich mit Google Search Console auseinander gesetzt  https://search.google.com/search-console/about?hl=de, außerdem habe ich einen neuen DNS eintrag zur Website hinzugefügt um den Inhaber zu bestehtigen. Zu dem habe ich mich mit SSL auseinander gesetzt um die Website sicherer zu machen und eine https verbingdung zu ermöglichen. Momentan warte ich noch auf das SSL Zertifikat.
+Am 12ten Tage habe ich mich mit Google Search Console auseinander gesetzt  https://search.google.com/search-console/about?hl=de, außerdem habe ich einen neuen DNS eintrag zur Website hinzugefügt um den Inhaber zu bestehtigen. Zu dem habe ich mich mit SSL auseinander gesetzt um die Website sicherer zu machen und eine https verbingdung zu ermöglichen. Momentan warte ich noch auf das SSL Zertifikat. Ich habe mich auch einwenig mit den SEO-Grundlagen auseinander gesetzt, jedoch ist stanev.at noch nicht geindexed dh momentan bringt SEO noch nichts. https://developers.google.com/search/docs/fundamentals/seo-starter-guide?hl=de
 
 **Verbesserungen:**
 - Hoffentlich bessere Performance in Google Search 
