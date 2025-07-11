@@ -168,6 +168,16 @@ Am 11ten Tag habe ich mich auf die Kontakte Seite konzentriert, dort habe ich di
 
 ## Tag 12
 
+Am 12ten Tage habe ich mich mit Google Search Console auseinander gesetzt  https://search.google.com/search-console/about?hl=de, außerdem habe ich einen neuen DNS eintrag zur Website hinzugefügt um den Inhaber zu bestehtigen. Zu dem habe ich mich mit SSL auseinander gesetzt um die Website sicherer zu machen und eine https verbingdung zu ermöglichen. Momentan warte ich noch auf das SSL Zertifikat.
+
+**Verbesserungen:**
+- Hoffentlich bessere Performance in Google Search 
+- *Bald* sichere Verbindung per https, dank SSL
+
+
+**Platz für Bild(er):**
+> ![GoogleSearchConsole](IMAGES/screenshots/google_search_console%20-%2011.Juni.2025.png)
+> ![SSL](IMAGES/screenshots/SSL%20-%2011.July.2025.png)
 ---
 
 ## Tag 13
