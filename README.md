@@ -190,6 +190,11 @@ WOCHENENDE🎉🎉🎉
 
 ## Tag 15
 
+Am 15ten Tag habe ich mich weiter mit der Google Search Console auseinander gesetzt und mal wieder probiert ein indexierung für https://stanev.at und allen anderen URL's. Außerdem habe ich einpaar kleine Änderungen im Code unternommen.
+
+**Verbersserungen:**
+- Index?
+
 ---
 
 ## Tag 16
