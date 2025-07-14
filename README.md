@@ -181,11 +181,11 @@ Am 12ten Tage habe ich mich mit Google Search Console auseinander gesetzt  https
 ---
 
 ## Tag 13
-
+WOCHENENDE🎉🎉🎉
 ---
 
 ## Tag 14
-
+WOCHENENDE🎉🎉🎉
 ---
 
 ## Tag 15
