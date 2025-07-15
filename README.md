@@ -199,6 +199,10 @@ Am 15ten Tag habe ich mich weiter mit der Google Search Console auseinander gese
 
 ## Tag 16
 
+Am 16ten TAg habe ich die Website fertig gemacht. Jetzt fehlen nur noch die rechtlichen Sachen. 
+
+**Verbesserungen:**
+- Fotos hinzugefügt + restlichen Feinschliffe
 ---
 
 ## Tag 17
