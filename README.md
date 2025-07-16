@@ -207,6 +207,15 @@ Am 16ten TAg habe ich die Website fertig gemacht. Jetzt fehlen nur noch die rech
 
 ## Tag 17
 
+Am 17teb Tag habe ich das Impressum geschieben und die Website DSGVO konform gemacht, https://www.cookiebot.com/de/compliance-test/0b7b61a3-8998-4778-aec3-ec632f8495fb/?cb_share=1#website_scan_results 
+
+**Verbesserungen:**
+- Die Website ist nun Rechtskonform
+- Impressum + Datenschutz 
+
+**Platz für Bild(er):**
+> ![Datenschutz](IMAGES/screenshots/datenschutz.html%20-%2016.Juli.2025.png)
+> ![Impressum](IMAGES/screenshots/impressum.html%20-%2016.Juli.2025.png)
 ---
 
 ## Tag 18
