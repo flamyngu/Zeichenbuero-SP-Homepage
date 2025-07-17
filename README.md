@@ -220,6 +220,10 @@ Am 17teb Tag habe ich das Impressum geschieben und die Website DSGVO konform gem
 
 ## Tag 18
 
+Aller aller letzter fein Schlief. 
+
+**Verbesserungen:**
+- Die Website ist nun offiziel online.
 ---
 
 ## Tag 19
