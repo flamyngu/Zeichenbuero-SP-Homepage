@@ -215,3 +215,7 @@ Am achtzehnten Tag habe ich den allerletzten Feinschliff vorgenommen.
 **Verbesserungen:**
 - Die Website ist nun offiziell online.
 ---
+
+## Tag 19
+
+Am neunzehnten Tag habe ich Feedback von Freunden und Bekannten eingeholt. Dabei habe ich einige kleine Fehler gefunden, die ich behoben habe.
