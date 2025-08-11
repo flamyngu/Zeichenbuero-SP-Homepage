@@ -219,3 +219,7 @@ Am achtzehnten Tag habe ich den allerletzten Feinschliff vorgenommen.
 ## Tag 19
 
 Am neunzehnten Tag habe ich Feedback von Freunden und Bekannten eingeholt. Dabei habe ich einige kleine Fehler gefunden, die ich behoben habe.
+
+## Tag 20
+
+Am zwanzigsten Tag habe ich mich tiefgründig mit SEO, lighthouse, meta tags, JSON-LD und XML-Sitetables auseinader gesetzte
